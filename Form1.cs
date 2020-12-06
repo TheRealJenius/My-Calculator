@@ -34,7 +34,7 @@ namespace My_Calculator
                     resultValue = 0;
                 }
                 textBox_Result.Clear();
-                previousValues = "";
+                //previousValues = "";
             }
             // sender does not containg the parameter for text so we need to cast sender as Button object
             Button button = (Button)sender;
@@ -70,6 +70,7 @@ namespace My_Calculator
                 if (isEqualPerformed)
                 {
                     previousValues = ""; // clears the current value to allow the concatenation to work
+                    isEqualPerformed = false;
                 }
                 previousValues += textBox_Result.Text;
                 operationPerformed = button.Text;
@@ -119,8 +120,13 @@ namespace My_Calculator
 
         private void buttonEqual_Click(object sender, EventArgs e)
         {
-            textBox_Result.Text = Calculate(operationPerformed);
-            resultValue = Double.Parse(textBox_Result.Text); // setting the current result Value for the label text
+            if (labelCurrentValue.Text != "") // this will avoid the program calculating nothing if the equal sign is pressed too early
+            {
+                textBox_Result.Text = Calculate(operationPerformed);
+                labelCurrentValue.Text = ""; // clearing the previous label text so that the current result is displayed
+                resultValue = Double.Parse(textBox_Result.Text); // setting the current result Value for the label text
+            }
+            
             previousValues = textBox_Result.Text; // sets the previous value to the final result, in case of further calculations
             labelCurrentValue.Text = ""; // clearing the previous label text so that the current result is displayed
             isEqualPerformed = true;

@@ -8,3 +8,13 @@ D:\Coding\Calculator\My Calculator\obj\Debug\My Calculator.csproj.GenerateResour
 D:\Coding\Calculator\My Calculator\obj\Debug\My Calculator.csproj.CoreCompileInputs.cache
 D:\Coding\Calculator\My Calculator\obj\Debug\My Calculator.exe
 D:\Coding\Calculator\My Calculator\obj\Debug\My Calculator.pdb
+D:\Coding\My Calculator\bin\Debug\My Calculator.exe.config
+D:\Coding\My Calculator\bin\Debug\My Calculator.exe
+D:\Coding\My Calculator\bin\Debug\My Calculator.pdb
+D:\Coding\My Calculator\obj\Debug\My Calculator.csprojAssemblyReference.cache
+D:\Coding\My Calculator\obj\Debug\My_Calculator.Form1.resources
+D:\Coding\My Calculator\obj\Debug\My_Calculator.Properties.Resources.resources
+D:\Coding\My Calculator\obj\Debug\My Calculator.csproj.GenerateResource.cache
+D:\Coding\My Calculator\obj\Debug\My Calculator.csproj.CoreCompileInputs.cache
+D:\Coding\My Calculator\obj\Debug\My Calculator.exe
+D:\Coding\My Calculator\obj\Debug\My Calculator.pdb
